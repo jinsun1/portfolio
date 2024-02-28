@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Project2 Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: #000;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		/*.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		}*/
+
+		#top {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		#top img {
+			width: 100%;
+			display: block;
+		}
+
+		.ss-go-top {
+			z-index: 2;
+			/*opacity: 0;
+			visibility: hidden;*/
+			-webkit-transform: translate(0, 200%);
+			/*transform: translate(0, 200%);*/
+			-webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+			transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+			position: fixed;
+			bottom: 13rem;
+			right: 4.4rem;
+		}
+
+		.ss-go-top a {
+			display: -ms-flexbox;
+			display: -webkit-box;
+			display: flex;
+			-ms-flex-align: center;
+			-webkit-box-align: center;
+			align-items: center;
+			-ms-flex-pack: center;
+			-webkit-box-pack: center;
+			justify-content: center;
+			text-decoration: none;
+			border: 0 none;
+			height: 3.8rem;
+			width: 3.8rem;
+			border-radius: 50%;
+			background-color: #111;
+			-webkit-transition: all .3s;
+			transition: all .3s;
+			position: relative;
+			border: 2px solid #111;
+		}
+
+		.ss-go-top a:hover {
+			background-color: #111;
+			border: 2px solid red;
+		}
+
+		.ss-go-top svg {
+			height: 24px;
+			width: 24px;
+		}
+
+		.ss-go-top svg path {
+			fill: white;
+			transition: all .3s;
+		}
+
+		.ss-go-top:hover svg path {
+			fill: red;
+		}
+
+		.ss-go-top.link-is-visible {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transform: translate(0, 0);
+			transform: translate(0, 0);
+		}
+	</style>
+	<link rel="shortcut icon" href="./images/project/favicon_bae.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="top">
+		<img src="./images/project/baenangbus/01.jpg" class="guide1">
+		<img src="./images/project/baenangbus/02.jpg" class="guide1">
+		<img src="./images/project/baenangbus/03.jpg" class="guide1">
+		<img src="./images/project/baenangbus/04.jpg" class="guide1">
+		<img src="./images/project/baenangbus/05.jpg" class="guide1">
+		<img src="./images/project/baenangbus/06.jpg" class="guide1">
+		<img src="./images/project/baenangbus/07.jpg" class="guide1">
+		<img src="./images/project/baenangbus/08.jpg" class="guide1">
+		<img src="./images/project/baenangbus/09.jpg" class="guide1">
+	</div>
+	<div class="fixed_box">
+		<!-- end ss-go-top -->
+		<!--<a href="#top" class="top_btn">
+			<img src="images/project/trip_ui/top.png" alt="top">
+		</a>-->
+	</div>
+
+	<div class="ss-go-top">
+		<a class="smoothscroll" title="Back to Top" href="#top">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z" />
+			</svg>
+		</a>
+	</div>
+
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/smooth.js"></script>
+</body>
+
+</html>
