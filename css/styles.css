@@ -963,7 +963,7 @@ textarea {
     -ms-flex: 0 0 58.33333%;
     -webkit-box-flex: 0;
     flex: 0 0 58.33333%;
-    max-width: 58.33333%;
+    max-width: 100%;
 }
 
 .large-8 {
@@ -1764,7 +1764,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: var(--color-2);
+    color:red;
 }
 
 a:hover,
@@ -2868,11 +2868,11 @@ button.btn--pill {
 }
 
 .skill-bars-fat li .percent60::before {
-    width: 47%;
+    width: 52%;
 }
 
 .skill-bars-fat li .percent65::before {
-    width: 59%;
+    width: 60%;
 }
 
 .skill-bars-fat li .percent70::before {
@@ -2880,7 +2880,7 @@ button.btn--pill {
 }
 
 .skill-bars-fat li .percent75::before {
-    width: 47%;
+    width: 52%;
 }
 
 .skill-bars-fat li .percent80::before {
@@ -2892,7 +2892,7 @@ button.btn--pill {
 }
 
 .skill-bars-fat li .percent90::before {
-    width: 52%;
+    width: 56%;
 }
 
 .skill-bars-fat li .percent95::before {
@@ -3700,7 +3700,7 @@ button.btn--pill {
     width: 100%;
     height: 100%;
 
-    /* background-image: url(../images/header-bg-3000.jpg);*/
+    background-image: url(../images/header-bg-3000-2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3750,20 +3750,20 @@ button.btn--pill {
 }
 
 .s-hero__content h1 {
-    font-size: 9.8rem;
+    font-size: 8.8rem;
     font-weight: 600;
-    letter-spacing: -.04em;
-    line-height: 1;
+    letter-spacing: -.01em;
+    line-height: 1.6;
     color: white;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .s-hero__content h3 {
-    font-family: var(--font-2);
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 1.667;
+    font-family: 'pretendard';
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 1.8;
     color: rgba(255, 255, 255, 0.5);
     margin-top: var(--vspace-0_5);
     margin-right: auto;
@@ -3776,6 +3776,7 @@ button.btn--pill {
 .s-hero__content h3 span,
 .s-hero__content h3 a {
     color: white;
+    font-weight: 300;
 }
 
 .s-hero__content h3::after {
@@ -3932,22 +3933,24 @@ button.btn--pill {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
     .s-hero__content h1 {
-        font-size: 9.4rem;
+        font-size: 9rem;
     }
 
     .s-hero__content h3 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width: 1400px) {
     .s-hero__content h1 {
-        font-size: 8.8rem;
+        font-size: 8.2rem;
     }
 
     .s-hero__content h3 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         max-width: 680px;
+        font-family: 'pretendard';
+        font-weight: 500;
     }
 }
 
@@ -4185,14 +4188,15 @@ button.btn--pill {
 
 .resume-block__header-meta {
     font-family: var(--font-2);
-    font-size: calc(var(--text-size) * 1.1111);
-    font-style: italic;
+    /*font-size: calc(var(--text-size) * 1.1111);*/
+    /*font-style: italic;*/
     margin-top: -.4rem;
-    margin-bottom: var(--vspace-0_75);
+    /*margin-bottom: var(--vspace-0_75);*/
 }
 
 .resume-block__header-meta span:first-child {
-    margin-right: .6rem;
+    margin-right: .4rem;
+    font-family: 'Pretendard';
 }
 
 .resume-block__header-date {
